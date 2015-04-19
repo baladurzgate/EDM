@@ -210,6 +210,104 @@ function VirtualKeyboard(game,x,y,style,charLimit=10,outputText=null,sound=null)
 	
 }
 
+
+function MuteButton(game,x,y,style){
+	
+	var button = game.add.group();
+	
+	button.x = x
+	button.y = y
+	
+	var w = 30;
+	var h = 30;
+	
+	var padding = 15;
+	var margin = 30;
+	
+	var rectangle = game.add.graphics(0, 0);
+	rectangle.lineStyle(3, 0x0000FF,3);
+	rectangle.beginFill(0xFFFFFF);
+	rectangle.drawRect(0, 0, w+padding, h+padding );
+	rectangle.endFill();
+	
+	button.add(rectangle);
+	
+	this.on = false;
+	
+	var label = new Phaser.Text(game, padding, padding, "MUTE SOUNDS", style);	
+	
+	button.add(label)
+	
+	button.animation = game.add.tween(button).to( { y:'+10' }, 100, Phaser.Easing.Quadratic.Out).to( { y:'-10' }, 100, Phaser.Easing.Quadratic.Out);
+	
+	button.inputEnabled = true;
+	
+	button.events.onInputDown.add(function(b){
+		
+		if(this.on == false){
+			
+			b.animation.start();
+			
+			this.muteSounds();
+			rectangle.clear();
+			rectangle.lineStyle(3, 0xFF0000,3);
+			rectangle.beginFill(0xFFFFFF);
+			rectangle.drawRect(0, 0, w+padding, h+padding );
+			rectangle.endFill();
+			label.setText("UNMUTE SOUNDS");	
+			this.on = true;
+			
+		}else{
+			
+			b.animation.start();
+			
+			this.unMuteSounds();
+			rectangle.clear();
+			rectangle.lineStyle(3, 0x0000FF,3);
+			rectangle.beginFill(0xFFFFFF);
+			rectangle.drawRect(0, 0, w+padding, h+padding );
+			rectangle.endFill();
+			label.setText("MUTE SOUNDS");	
+		}
+
+	},this);
+	
+		
+	this.muteSounds = function(){
+
+		if(Memory.sounds != undefined){
+			
+			for (var  key in Memory.sounds){
+				
+				Memory.sounds[key].mute = true;
+				
+				
+			}
+		}
+		
+	}
+	
+	this.unMuteSounds = function(){
+
+		if(Memory.sounds != undefined){
+			
+			for (var  key in Memory.sounds){
+				
+				Memory.sounds[key].mute = false;
+				
+				
+			}
+		}
+		
+	}
+	
+	return button;
+
+	
+	
+}
+	
+
 function sendToDataBase(data,complete=function(r){console.log(r.responseText);}){
 	
 	$.ajax({
@@ -221,19 +319,3 @@ function sendToDataBase(data,complete=function(r){console.log(r.responseText);})
 	
 }
 
-function readDataBase(data){
-	
-	$.post( "src/score_database.php", data);
-	/*$.ajax({
-	  type: "POST",
-	  url: "src/score_database.php",
-	  data: data,
-	  success: success,
-	  dataType: dataType
-	});*/
-	
-	 	
-
-	
-}
- 
