@@ -1,0 +1,192 @@
+{"frames": [
+
+{
+	"filename": "AymericCHAUPRADE.jpg",
+	"frame": {"x":2,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "BriceHORTEFEUX.jpg",
+	"frame": {"x":2,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "DominiqueRIQUET.jpg",
+	"frame": {"x":174,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "GuillaumeBALAS.jpg",
+	"frame": {"x":174,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Jean-LucMELENCHON.jpg",
+	"frame": {"x":346,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Jean-MarieCAVADA.jpg",
+	"frame": {"x":346,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Jean-MarieLEPEN.jpg",
+	"frame": {"x":518,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "JeanARTHUIS.jpg",
+	"frame": {"x":518,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "JoseBOVE.jpg",
+	"frame": {"x":690,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "MicheleRIVASI.jpg",
+	"frame": {"x":690,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "MicheleALLIOTMARIE.jpg",
+	"frame": {"x":862,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "NadineMORANO.jpg",
+	"frame": {"x":862,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "NicolasBAY.jpg",
+	"frame": {"x":1034,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "SteeveBRIOIS.jpg",
+	"frame": {"x":1034,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "frankPROUST.jpg",
+	"frame": {"x":1206,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "hidden.jpg",
+	"frame": {"x":1206,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "louisALIOT.jpg",
+	"frame": {"x":1378,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "robertROCHEFORT.jpg",
+	"frame": {"x":1550,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "selected.png",
+	"frame": {"x":1378,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "vincentPEILLON.jpg",
+	"frame": {"x":1550,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_cards.png",
+	"format": "RGBA8888",
+	"size": {"w":1722,"h":436},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:251316ebd99f7cd7c3d649fa289d8000:1efe5c183368df0ed4ea31343cd7c218:21d84c32818173d993d1af4c5d923969$"
+}
+}

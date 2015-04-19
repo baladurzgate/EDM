@@ -1,0 +1,77 @@
+{
+    "list": [
+        {
+            "name": "AymericCHAUPRADE",
+            "nice_name": "Aymeric Chauprade"
+        },
+        {
+            "name": "BriceHORTEFEUX",
+            "nice_name": "Brice Hortefeux"
+        },
+        {
+            "name": "DominiqueRIQUET",
+            "nice_name": "Dominique Riquet"
+        },
+        {
+            "name": "GuillaumeBALAS",
+            "nice_name": "Guillaume Ballas"
+        },
+        {
+            "name": "Jean-LucMELENCHON",
+            "nice_name": "Jean-Luc Mélenchon"
+        },
+        {
+            "name": "Jean-MarieCAVADA",
+            "nice_name": "Jean-Marie Cavada"
+        },
+        {
+            "name": "Jean-MarieLEPEN",
+            "nice_name": "Jean-Marie Lepen"
+        },
+        {
+            "name": "JeanARTHUIS",
+            "nice_name": "Jean Arthuis"
+        },
+        {
+            "name": "JoseBOVE",
+            "nice_name": "José BOVÉ"
+        },
+        {
+            "name": "MicheleRIVASI",
+            "nice_name": "Michèle Rivasi"
+        },
+        {
+            "name": "MicheleALLIOTMARIE",
+            "nice_name": "Michèle Alliotmarie"
+        },
+        {
+            "name": "NadineMORANO",
+            "nice_name": "Nadine Morano"
+        },
+        {
+            "name": "NicolasBAY",
+            "nice_name": "Nicolas Bay"
+        },
+        {
+            "name": "SteeveBRIOIS",
+            "nice_name": "Steeve Brios"
+        },
+        {
+            "name": "frankPROUST",
+            "nice_name": "Frank Proust"
+        },
+        {
+            "name": "louisALIOT",
+            "nice_name": "Louis Aliot"
+        },
+        {
+            "name": "robertROCHEFORT",
+            "nice_name": "Robert Rochefort"
+        },
+        {
+            "name": "vincentPEILLON",
+            "nice_name": "Vincent Peillon"
+        }
+    ]
+    
+}

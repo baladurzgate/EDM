@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>EUROPEAN DEPUTY MADNESS 2 !</title>
+	<script src="src/lib/jquery.js"></script>
+	<script src="src/lib/phaser.js"></script>
+	<script src="src/Boot.js"></script>
+	<script src="src/Preloader.js"></script>
+	<script src="src/MainMenu.js"></script>
+	<script src="src/ScoreMenu.js"></script>
+	<script src="src/Game.js"></script>
+</head>
+<body>
+<div id="gameContainer"></div>
+<script type="text/javascript">
+
+window.onload = function() {
+
+	var game = new Phaser.Game(900, 768, Phaser.AUTO, 'gameContainer');
+
+	game.state.add('Boot', Memory.Boot);
+	game.state.add('Preloader', Memory.Preloader);
+	game.state.add('MainMenu', Memory.MainMenu);
+	game.state.add('Game', Memory.Game);
+	game.state.add('ScoreMenu', Memory.ScoreMenu);
+
+	game.state.start('Boot');
+
+};
+
+</script>
+
+</body>
+</html>
