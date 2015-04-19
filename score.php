@@ -1,8 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "games";
+
+include ('db.php');
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
