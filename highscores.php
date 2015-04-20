@@ -16,7 +16,7 @@ if(isset($_GEt['orderby'])){
 }
 
 	
-	$sql = "SELECT * FROM edm_scores ORDER BY ".$orderby;
+	$sql = "SELECT * FROM edm_scores ORDER BY ".$orderby." DESC";
 	
     $result = $conn->query($sql);
 
@@ -37,12 +37,15 @@ function cleanStr ($str){
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="score page">
 		<link rel="stylesheet" href="style.css">
-		<title> EUROPEAN DEPUTY MADNESS 2 ! </title>
+		<title> EUROPEAN PARLIAMENT MADNESS </title>
 	</head>
 	
 	<body>
-	<div class = "title"> EUROPEAN DEPUTY MADNESS 2 ! </div>
+	<div class = "title"> EUROPEAN PARLIAMENT MADNESS</div>
 	<div class = "wrapper">
+	<div class = "menu">
+		<a class = "bt" href="index.html"> <--MENU </a>
+	</div>
 	<div class = "highscores"> HIGHSCORES : </div>
 	<?php
 	
@@ -50,7 +53,7 @@ function cleanStr ($str){
     while($row = mysqli_fetch_array($result)){
 		
 		  echo '<tr class = "score_line">';
-			echo '<td class = "name"><b>'.$row['name'].'</b></td>';
+			echo '<td class = "name">'.$row['name'].'</b></td>';
 			echo '<td class = "score"><b>'.$row['score'].'</b></td>';
 			echo '<td class = "time"><i>'.$row['timestamp'].'</i></td>';
 		 echo ' </tr>';

@@ -19,16 +19,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "DominiqueRIQUET.jpg",
-	"frame": {"x":174,"y":2,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "ElisabethMORIN-CHANTIER.jpg",
+	"filename": "BriceHORTEFEUX.jpg",
 	"frame": {"x":2,"y":436,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -37,8 +28,26 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
+	"filename": "DominiqueRIQUET.jpg",
+	"frame": {"x":2,"y":653,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ElisabethMORIN-CHANTIER.jpg",
+	"frame": {"x":2,"y":870,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
 	"filename": "GuillaumeBALAS.jpg",
-	"frame": {"x":174,"y":219,"w":170,"h":215},
+	"frame": {"x":2,"y":1087,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -47,7 +56,7 @@
 },
 {
 	"filename": "Jean-LucMELENCHON.jpg",
-	"frame": {"x":346,"y":2,"w":170,"h":215},
+	"frame": {"x":174,"y":2,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -56,7 +65,7 @@
 },
 {
 	"filename": "Jean-LucSCHAFFHAUSER.jpg",
-	"frame": {"x":2,"y":653,"w":170,"h":215},
+	"frame": {"x":174,"y":219,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -74,33 +83,6 @@
 },
 {
 	"filename": "Jean-MarieLEPEN.jpg",
-	"frame": {"x":346,"y":219,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "JeanARTHUIS.jpg",
-	"frame": {"x":518,"y":2,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "JoseBOVE.jpg",
-	"frame": {"x":2,"y":870,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "MicheleALLIOTMARIE.jpg",
 	"frame": {"x":174,"y":653,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -109,43 +91,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "NadineMORANO.jpg",
-	"frame": {"x":346,"y":436,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "NicolasBAY.jpg",
-	"frame": {"x":518,"y":219,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "SteeveBRIOIS.jpg",
-	"frame": {"x":690,"y":2,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "alainCADEC.jpg",
-	"frame": {"x":2,"y":1087,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "aliainLAMASSOURE.jpg",
+	"filename": "JeanARTHUIS.jpg",
 	"frame": {"x":174,"y":870,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -154,7 +100,43 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "angeliqueDELAHAYE.jpg",
+	"filename": "MicheleALLIOTMARIE.jpg",
+	"frame": {"x":174,"y":1087,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "NadineMORANO.jpg",
+	"frame": {"x":346,"y":2,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "NicolasBAY.jpg",
+	"frame": {"x":346,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "SteeveBRIOIS.jpg",
+	"frame": {"x":346,"y":436,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "alainCADEC.jpg",
 	"frame": {"x":346,"y":653,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -163,8 +145,26 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
+	"filename": "aliainLAMASSOURE.jpg",
+	"frame": {"x":346,"y":870,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "angeliqueDELAHAYE.jpg",
+	"frame": {"x":346,"y":1087,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
 	"filename": "anneSANDER.jpg",
-	"frame": {"x":518,"y":436,"w":170,"h":215},
+	"frame": {"x":518,"y":2,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -173,7 +173,7 @@
 },
 {
 	"filename": "bernardMONOT.jpg",
-	"frame": {"x":690,"y":219,"w":170,"h":215},
+	"frame": {"x":690,"y":2,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -200,7 +200,7 @@
 },
 {
 	"filename": "edouardFERRAND.jpg",
-	"frame": {"x":2,"y":1304,"w":170,"h":215},
+	"frame": {"x":1206,"y":2,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -209,7 +209,7 @@
 },
 {
 	"filename": "edouardMARTIN.jpg",
-	"frame": {"x":174,"y":1087,"w":170,"h":215},
+	"frame": {"x":1378,"y":2,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -218,7 +218,7 @@
 },
 {
 	"filename": "emmanuelMAUREL.jpg",
-	"frame": {"x":346,"y":870,"w":170,"h":215},
+	"frame": {"x":1550,"y":2,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -227,7 +227,7 @@
 },
 {
 	"filename": "ericANDRIEU.jpg",
-	"frame": {"x":518,"y":653,"w":170,"h":215},
+	"frame": {"x":518,"y":219,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -236,7 +236,7 @@
 },
 {
 	"filename": "evaJOLY.jpg",
-	"frame": {"x":690,"y":436,"w":170,"h":215},
+	"frame": {"x":518,"y":436,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -245,7 +245,7 @@
 },
 {
 	"filename": "frankPROUST.jpg",
-	"frame": {"x":862,"y":219,"w":170,"h":215},
+	"frame": {"x":518,"y":653,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -254,42 +254,6 @@
 },
 {
 	"filename": "gillesLEBRETON.jpg",
-	"frame": {"x":1034,"y":219,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "hidden.jpg",
-	"frame": {"x":2,"y":1521,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "isabelleTHOMAS.jpg",
-	"frame": {"x":2,"y":1738,"w":170,"h":215},
-	"rotated": true,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "jean-francoisJALKH.jpg",
-	"frame": {"x":346,"y":1087,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "jeanpaulDENANOT.jpg",
 	"frame": {"x":518,"y":870,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -298,61 +262,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "jeromeLAVRILLEUX.jpg",
-	"frame": {"x":690,"y":653,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "joelleBERGERON.jpg",
-	"frame": {"x":862,"y":436,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "joelleMELIN.jpg",
-	"frame": {"x":1034,"y":436,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "louis-josephMANSCOUR.jpg",
-	"frame": {"x":174,"y":1304,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "louisALIOT.jpg",
-	"frame": {"x":174,"y":1521,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "marcJOULAUD.jpg",
-	"frame": {"x":219,"y":1738,"w":170,"h":215},
-	"rotated": true,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "marie-christineARNAUTU.jpg",
+	"filename": "hidden.jpg",
 	"frame": {"x":518,"y":1087,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -361,7 +271,34 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "marineLEPEN.jpg",
+	"filename": "isabelleTHOMAS.jpg",
+	"frame": {"x":690,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "jean-francoisJALKH.jpg",
+	"frame": {"x":690,"y":436,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "jeanpaulDENANOT.jpg",
+	"frame": {"x":690,"y":653,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "jeromeLAVRILLEUX.jpg",
 	"frame": {"x":690,"y":870,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -370,52 +307,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "mauricePONGA.jpg",
-	"frame": {"x":862,"y":653,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "michelDANTIN.jpg",
-	"frame": {"x":1034,"y":653,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "micheleRIVASI.jpg",
-	"frame": {"x":346,"y":1304,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "mireilleDORNANO.jpg",
-	"frame": {"x":346,"y":1521,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "nathalieGRIESBECK.jpg",
-	"frame": {"x":436,"y":1738,"w":170,"h":215},
-	"rotated": true,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "philippeJUVIN.jpg",
+	"filename": "joelleBERGERON.jpg",
 	"frame": {"x":690,"y":1087,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -424,8 +316,125 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "philippeLOISEAU.jpg",
+	"filename": "joelleMELIN.jpg",
+	"frame": {"x":862,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "JoseBOVE.jpg",
+	"frame": {"x":1034,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "louis-josephMANSCOUR.jpg",
+	"frame": {"x":1206,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "louisALIOT.jpg",
+	"frame": {"x":1378,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marcJOULAUD.jpg",
+	"frame": {"x":1550,"y":219,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marie-christineARNAUTU.jpg",
+	"frame": {"x":862,"y":436,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "marineLEPEN.jpg",
+	"frame": {"x":862,"y":653,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mauricePONGA.jpg",
 	"frame": {"x":862,"y":870,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "michelDANTIN.jpg",
+	"frame": {"x":862,"y":1087,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "micheleRIVASI.jpg",
+	"frame": {"x":1034,"y":436,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mireilleDORNANO.jpg",
+	"frame": {"x":1206,"y":436,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "nathalieGRIESBECK.jpg",
+	"frame": {"x":1378,"y":436,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "philippeJUVIN.jpg",
+	"frame": {"x":1550,"y":436,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "philippeLOISEAU.jpg",
+	"frame": {"x":1034,"y":653,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -443,42 +452,6 @@
 },
 {
 	"filename": "robertROCHEFORT.jpg",
-	"frame": {"x":518,"y":1304,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "selected.png",
-	"frame": {"x":518,"y":1521,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "spohieMONTEL.jpg",
-	"frame": {"x":653,"y":1738,"w":170,"h":215},
-	"rotated": true,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "sylvieGODDYN.jpg",
-	"frame": {"x":862,"y":1087,"w":170,"h":215},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
-	"sourceSize": {"w":170,"h":215},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "sylvieGOULARD.jpg",
 	"frame": {"x":1034,"y":1087,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
@@ -487,8 +460,44 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
+	"filename": "selected.png",
+	"frame": {"x":1206,"y":653,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "spohieMONTEL.jpg",
+	"frame": {"x":1378,"y":653,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "sylvieGODDYN.jpg",
+	"frame": {"x":1550,"y":653,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "sylvieGOULARD.jpg",
+	"frame": {"x":1206,"y":870,"w":170,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
+	"sourceSize": {"w":170,"h":215},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
 	"filename": "tokiaSAIFI.jpg",
-	"frame": {"x":690,"y":1304,"w":170,"h":215},
+	"frame": {"x":1206,"y":1087,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -497,7 +506,7 @@
 },
 {
 	"filename": "vincentPEILLON.jpg",
-	"frame": {"x":690,"y":1521,"w":170,"h":215},
+	"frame": {"x":1378,"y":870,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -506,7 +515,7 @@
 },
 {
 	"filename": "virginieROZIERE.jpg",
-	"frame": {"x":862,"y":1304,"w":170,"h":215},
+	"frame": {"x":1378,"y":1087,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -515,7 +524,7 @@
 },
 {
 	"filename": "yannickJADOT.jpg",
-	"frame": {"x":1034,"y":1304,"w":170,"h":215},
+	"frame": {"x":1550,"y":870,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -524,7 +533,7 @@
 },
 {
 	"filename": "younousOMARJEE.jpg",
-	"frame": {"x":862,"y":1521,"w":170,"h":215},
+	"frame": {"x":1550,"y":1087,"w":170,"h":215},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":215},
@@ -534,10 +543,10 @@
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "atlas_cards.png",
+	"image": "cards_atlas_2.png",
 	"format": "RGBA8888",
-	"size": {"w":1206,"h":1910},
+	"size": {"w":1722,"h":1304},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:6ff09aa9e3ebeb6ba2428dd698f0094b:698b32140446b58bd3f411b25a5aa581:21d84c32818173d993d1af4c5d923969$"
+	"smartupdate": "$TexturePacker:SmartUpdate:0fa20ee785eef331f88d5d86fb7e3a61:3089d61ff4096be02587c402f2e3fd84:e93368c2053d920b0b4e4f35ae3a3c73$"
 }
 }

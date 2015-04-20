@@ -1,5 +1,5 @@
-
-Memory.Game = function (game) {
+		console.log(EPM.sounds)
+EPM.Game = function (game) {
 
     //  When a State is added to Phaser it automatically has the following properties set on it, even if they already exist:
 
@@ -32,7 +32,7 @@ Memory.Game = function (game) {
 	this.number_of_cards;
 	this.fallen_cards;
 	this.previous_hitpoints;
-	this.memory_delay;
+	this.EPM_delay;
 	this.hitpoints;
 	this.cards_info;
 	this.card_references
@@ -48,9 +48,11 @@ Memory.Game = function (game) {
 
 };
 
-Memory.Game.prototype = {
+EPM.Game.prototype = {
 
     create: function () {
+		
+		EPM.sounds.music.stop();
 		
 		// ------ LOAD DATA
 		
@@ -67,7 +69,7 @@ Memory.Game.prototype = {
 		
 		this.level = 0;
 		
-		Memory.global.score = 0;
+		EPM.global.score = 0;
 		
 		this.start_number_of_cards = 6;
 		
@@ -75,7 +77,7 @@ Memory.Game.prototype = {
 		
 		this.start_hitpoints = 10;
 		
-		this.memory_delay = 0;
+		this.EPM_delay = 0;
 		
 		this.previous_matches = 0;
 		
@@ -93,30 +95,26 @@ Memory.Game.prototype = {
 		
 		this.stage.backgroundColor = 0xEEEEEE;
 		
-		this.game_banner = this.add.group();
-		this.game_banner.y = 10;
+		this.muteButton = new MuteButton(this,750, 10);
 		
-		var rectange = this.add.graphics(0, 0);
-		rectange.lineStyle(3, 0x0000FF, 3);
-		rectange.drawRect(0, 0, this.world.width , 50 );
-		this.game_banner.add(rectange)
-		
-		this.title_text = this.add.text(10,10, "European Deputy Madness 2 !", {
-			font: "30px Courier",
-			fill: "#000000",
+		this.quitButton = new SmallButton(this,670, 10,50, 'QUIT',{
+			font: "14px Courier",
+			fill: "#0000FF",
 			align: "left"
-		},this.game_banner);
+		},this.quitGame,this);
+		
+
 		
 		this.selector = this.add.sprite(0,0,'cards_atlas','selected.png');
 		
 		this.profile_window = this.add.group();
 		
 		this.profile_window.x = 10;
-		this.profile_window.y = this.game_banner.height+30;
+		this.profile_window.y = 50//this.game_banner.height+30;
 
 		this.profile_photo= this.add.sprite(0,0,'cards_atlas','hidden.jpg',this.profile_window);
 		
-		this.profile_name = '...';
+		this.profile_name = '???';
 		
 		this.profile_text = this.add.text(0, this.profile_photo.height+10, this.profile_name, {
 			font: "18px Courier",
@@ -136,7 +134,7 @@ Memory.Game.prototype = {
 			align: "left"
 		},this.game_info_panel);
 		
-		this.score_text = this.add.text(5, 40, "score : "+Memory.global.score, {
+		this.score_text = this.add.text(5, 40, "score : "+EPM.global.score, {
 			font: "30px Courier",
 			fill: "#FFAA00",
 			align: "left"
@@ -194,12 +192,15 @@ Memory.Game.prototype = {
 				var card_reference = {
 					
 					name : this.cards_info.list[i].name,
-					nice_name : this.cards_info.list[i].nice_name,
+					nice_name : this.cards_info.list[i].name,
 					photo :this.cards_info.list[i].name+'.jpg'
+					
 					
 				}
 				
 				this.card_references.push(card_reference);
+				
+				console.log(this.cards_info.list[i].name+'.jpg');
 				
 		}
 		
@@ -209,10 +210,20 @@ Memory.Game.prototype = {
 		
 		this.level = l;
 
-		this.number_of_cards = this.start_number_of_cards + (l*2);
+			
+		if(this.start_number_of_cards + (l*2) <= 24){
+			
+			this.number_of_cards = this.start_number_of_cards + (l*2);
+			
+		}else{
+			
+			this.number_of_cards = 24;
+			
+		}
 		
-		if(l=0)Memory.global.score = 0;
-		if(l=0)Memory.global.chains = 0;
+		if(l=0)EPM.global.score = 0;
+		if(l=0)EPM.global.chains = 0;
+		if(l=0)EPM.global.stats.hitpoints = [];
 		
 		if(l=0)this.clock = 0;
 		
@@ -230,7 +241,9 @@ Memory.Game.prototype = {
 
 		this.fallen_cards = 0;
 		
-		this.profile_name = '...';
+		this.profile_name = '???';
+		
+		this.update_profile_text();
 		
 		this.grid.x = this.game_info_panel.x
 		
@@ -238,9 +251,10 @@ Memory.Game.prototype = {
 		
 		this.profile_photo.frameName= 'hidden.jpg';
 		
+		
 		this.batch.turn_cards()
 		
-		this.memory_delay = this.number_of_cards*10;
+		this.EPM_delay = this.number_of_cards*10;
 		
 		this.update_hitpoints_text();
 		
@@ -265,11 +279,15 @@ Memory.Game.prototype = {
 		
 		}
 		
+		this.batch = null;
+		
 		if(this.grid != null){
 		
 			this.grid.destroy();
 		
 		}
+		
+		this.grid = null;
 		
 	},
 	
@@ -299,7 +317,7 @@ Memory.Game.prototype = {
 	
 	next_level: function(){
 		
-		if(this.level+1 == 11){
+		/*if(this.level+1 == 11){
 			
 			this.game_over();
 		
@@ -308,8 +326,10 @@ Memory.Game.prototype = {
 			
 			this.start_level(this.level+1)
 			
-		}
+		}*/
 		
+		this.start_level(this.level+1)
+
 	},
 	
 	start_game:function(){
@@ -343,7 +363,7 @@ Memory.Game.prototype = {
 				
 			case 'play':
 			
-				Memory.global.timer += 1;
+				EPM.global.timer += 1;
 				this.batch.foreach_cards('checkBoundaries')
 				
 			
@@ -359,7 +379,7 @@ Memory.Game.prototype = {
 
     },
 
-    quitGame: function (pointer) {
+    quitToScore: function (pointer) {
 		
 		this.delete_GUI()
 		
@@ -369,6 +389,15 @@ Memory.Game.prototype = {
 
     },
 	
+    quitGame: function (pointer) {
+		
+		this.delete_GUI()
+		
+		this.delete_batch()
+
+        this.state.start('MainMenu');
+
+    },	
 	
 	game_over: function(){
 		
@@ -376,7 +405,9 @@ Memory.Game.prototype = {
 		
 		this.phase = "game_over"
 		
-		this.time.events.add(Phaser.Timer.SECOND * 2,  this.quitGame, this);
+		this.time.events.add(Phaser.Timer.SECOND * 2,  this.quitToScore, this);
+		
+		EPM.sounds.end.play();
 		
 	},
 	
@@ -389,7 +420,7 @@ Memory.Game.prototype = {
 			this.cardA = card;
 			this.cardA.turn();
 			
-			Memory.sounds.turn.play();
+			EPM.sounds.turn.play();
 			
 		}else if(this.cardB == null && card !== this.cardA){
 			
@@ -407,7 +438,7 @@ Memory.Game.prototype = {
 				var match_score = 10;
 				var chain_score = this.previous_matches*5;
 				
-				Memory.global.score += match_score+chain_score;
+				EPM.global.score += match_score+chain_score;
 				
 				this.number_of_matches +=1;		
 
@@ -419,7 +450,7 @@ Memory.Game.prototype = {
 				if(chain_score>0){
 					
 					this.add_bonus_fx(this.cardB.sprite.x+this.grid.x+10,this.cardB.sprite.y+this.grid.y+45,"+"+chain_score,"#AAFF00")
-					Memory.global.chains++;
+					EPM.global.chains++;
 					
 				}	
 				
@@ -435,7 +466,7 @@ Memory.Game.prototype = {
 				
 				this.previous_matches += 1;
 				
-				Memory.sounds.get_points.play();
+				EPM.sounds.get_points.play();
 			
 			}else{
 				
@@ -453,7 +484,7 @@ Memory.Game.prototype = {
 				
 				this.previous_matches = 0;
 				
-				Memory.sounds.error.play();
+				EPM.sounds.error.play();
 				
 			}
 			
@@ -485,7 +516,7 @@ Memory.Game.prototype = {
 			}
 			
 			
-			Memory.sounds.turn.play();
+			EPM.sounds.turn.play();
 		
 			
 		}
@@ -499,7 +530,7 @@ Memory.Game.prototype = {
 	set_current_profile:function(card){
 		
 		this.profile_photo.frameName = card.name+'.jpg';
-		this.profile_name= card.nice_name;
+		this.profile_name= card.name;
 		this.update_profile_text();
 	
 	},
@@ -537,6 +568,8 @@ Memory.Game.prototype = {
 		this.add_bonus_fx(this.hitpoints_text.world.x+this.hitpoints_text.width+10,this.hitpoints_text.world.y,sign+n,"#FF0000")
 		this.update_hitpoints_text();
 		
+		EPM.global.stats.hitpoints.push(this.hitpoints)
+		
 	},
 	
 	update_hitpoints_text : function(){
@@ -547,7 +580,7 @@ Memory.Game.prototype = {
 	
 	update_score_text : function(){
 		
-		 this.score_text.setText("score : "+Memory.global.score);
+		 this.score_text.setText("score : "+EPM.global.score);
 		
 	},
 	
@@ -591,9 +624,13 @@ Memory.Game.prototype = {
 	
 	delete_GUI:function(){
 		
-		this.game_info_panel.destroy();
-		this.profile_window.destroy();
-		this.grid.destroy();
+		if(this.game_info_panel != null)this.game_info_panel.destroy();
+		if(this.profile_window != null)this.profile_window.destroy();
+		if(this.grid != null)this.grid.destroy();
+		
+		this.game_info_panel = null;
+		this.profile_window = null;
+		this.grid = null;
 		
 	}
 
@@ -611,6 +648,7 @@ function Card(game,name,nice_name){
 	this.unlocked = false;
 	this.falling = false;
 	this.sprite = this.game.add.sprite(0,0,'cards_atlas',this.name+'.jpg')
+	console.log(this.name+'.jpg');
 	
 	this.init = function(){
 
@@ -680,14 +718,18 @@ function Card(game,name,nice_name){
 	
 	this.fall = function(){
 		
-		this.game.physics.arcade.enable(this.sprite)
-		this.game.physics.arcade.enable(this.sprite)
+		if(this.game.grid != null){
 		
-		this.sprite.body.angularVelocity += (Math.random()*180)-90;
-		
-		this.game.grid.bringToTop(this.sprite);	
+			this.game.physics.arcade.enable(this.sprite)
+			this.game.physics.arcade.enable(this.sprite)
+			
+			this.sprite.body.angularVelocity += (Math.random()*180)-90;
+			
+			this.game.grid.bringToTop(this.sprite);	
 
-		this.falling = false;
+			this.falling = false;
+		
+		}
 			
 		
 	}
@@ -730,8 +772,8 @@ function Batch(game){
 		
 		for (var i = 0 ; i < random_card_refs.length ; i ++){
 			
-			var cardA = new Card(this.game,random_card_refs[i].name,random_card_refs[i].nice_name);
-			var cardB = new Card(this.game,random_card_refs[i].name,random_card_refs[i].nice_name);
+			var cardA = new Card(this.game,random_card_refs[i].name,random_card_refs[i].name);
+			var cardB = new Card(this.game,random_card_refs[i].name,random_card_refs[i].name);
 			cardA.init();
 			cardB.init();
 			
@@ -874,7 +916,7 @@ function Batch(game){
 						this.game.add.tween(this.cards[turn_index].sprite).to( { y:'+30' }, 200, Phaser.Easing.Quadratic.In, true);
 						turn_index++;
 						
-						Memory.sounds.sweep.play();
+						EPM.sounds.sweep.play();
 						
 					}
 					
@@ -882,7 +924,7 @@ function Batch(game){
 					
 				}else{
 					
-					if(hide_animation_frame > this.game.memory_delay){
+					if(hide_animation_frame > this.game.EPM_delay){
 						
 						if(hide_index < this.cards.length){
 						
@@ -892,7 +934,7 @@ function Batch(game){
 								this.cards[hide_index].hide();
 								hide_index++;
 								
-								Memory.sounds.turn.play();
+								EPM.sounds.turn.play();
 								
 							}
 						

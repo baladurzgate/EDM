@@ -1,5 +1,7 @@
 
-var Memory = {
+var gameScale = 0.8;
+
+var EPM = {
 	
 	global : {
 		
@@ -8,22 +10,47 @@ var Memory = {
 		chains:0,
 		score: 0,
 		final_score:0,
-		bestScore: 100
+		bestScore: 100,
+		stats:{
+			hitpoints:[],
+			
+		},
+		musicOn:false
 		
 	},
 	
 	sounds:{},
 	
+	goToHighscoresPage:function(){
+		
+		window.location.href = "highscores.php";
+		
+	},
+	
+	openHighscoresPage:function(){
+		
+		window.open('highscores.php', '_blank');
+		
+	},
+	
+	goToCreditsPage:function(){
+		
+		window.location.href =('credits.html');
+		
+	}
+	
+	
+	
 };
 
 	
 
 
-Memory.Boot = function (game) {
+EPM.Boot = function (game) {
 
 };
 
-Memory.Boot.prototype = {
+EPM.Boot.prototype = {
 
     init: function () {
 
@@ -74,9 +101,56 @@ var LabelButton = function(game, x, y,w,h,padding,label, style,callback,callback
 
 	var rectangle = game.add.graphics(0, 0);
 	rectangle.lineStyle(3, 0x0000FF, 3);
-	rectangle.beginFill(0xFFFFFF, 0.5);
+	rectangle.beginFill(0xFFFFFF);
 	rectangle.drawRect(0, 0, w+padding, h+padding );
 	rectangle.endFill();
+	
+    var label = new Phaser.Text(game, padding, padding, label, style);
+
+
+	button.animation = game.add.tween(button).to( { y:'+10' }, 100, Phaser.Easing.Quadratic.Out).to( { y:'-10' }, 100, Phaser.Easing.Quadratic.Out);
+	
+	button.onInputDown.add(function(b){
+			
+		b.animation.start();
+		if(EPM.sounds.tic!=undefined)EPM.sounds.tic.play();
+		
+	});
+	
+	button.addChild(rectangle)
+
+    button.addChild(label);
+	
+	
+	label.x = Math.floor(button.width / 2);
+    label.y = Math.floor(button.height / 2);
+	
+	return button;
+	
+};
+
+var SmallButton = function(game, x, y,w,label,style,callback,callbackContext){
+	
+    var button = game.add.button(x, y, null, callback, callbackContext, null,null, null);
+	
+	var h = 20;
+	
+	var padding = 5;
+
+	var rectangle = game.add.graphics(0, 0);
+	rectangle.lineStyle(2, 0x0000FF, 2);
+	rectangle.beginFill(0xFFFFFF);
+	rectangle.drawRect(0, 0, w+padding, h+padding );
+	rectangle.endFill();
+	
+	button.animation = game.add.tween(button).to( { y:'+10' }, 100, Phaser.Easing.Quadratic.Out).to( { y:'-10' }, 100, Phaser.Easing.Quadratic.Out);
+	
+	button.onInputDown.add(function(b){
+			
+		b.animation.start();
+		if(EPM.sounds.tic!=undefined)EPM.sounds.tic.play();
+		
+	});
 	
     var label = new Phaser.Text(game, padding, padding, label, style);
 	
@@ -85,6 +159,8 @@ var LabelButton = function(game, x, y,w,h,padding,label, style,callback,callback
     button.addChild(label);
 	
 	return button;
+	
+
 	
 };
 
@@ -102,7 +178,7 @@ function VirtualKeyboard(game,x,y,style,charLimit=10,outputText=null,sound=null)
 	var h = 60;
 	var padding = 15;
 	var margin = 30;
-	var col_nb = 5
+	var col_nb = 8;
 	
 	keyboard.message = "";
 	
@@ -165,6 +241,8 @@ function VirtualKeyboard(game,x,y,style,charLimit=10,outputText=null,sound=null)
 				this.update_output();
 				
 				b.active = false;
+				
+				if(EPM.sounds.tic!=undefined)EPM.sounds.tic.play();
 			
 			}
 
@@ -211,32 +289,33 @@ function VirtualKeyboard(game,x,y,style,charLimit=10,outputText=null,sound=null)
 }
 
 
-function MuteButton(game,x,y,style){
+function MuteButton(game,x,y){
 	
-	var button = game.add.group();
+	var button = game.add.sprite(x, y, null);;
 	
 	button.x = x
 	button.y = y
 	
-	var w = 30;
-	var h = 30;
+	var w = 130;
+	var h = 20;
 	
-	var padding = 15;
-	var margin = 30;
+	var padding = 5;
 	
 	var rectangle = game.add.graphics(0, 0);
-	rectangle.lineStyle(3, 0x0000FF,3);
+	rectangle.lineStyle(2, 0x0000FF,2);
 	rectangle.beginFill(0xFFFFFF);
 	rectangle.drawRect(0, 0, w+padding, h+padding );
 	rectangle.endFill();
 	
-	button.add(rectangle);
+	button.addChild(rectangle);
 	
-	this.on = false;
+	var label = new Phaser.Text(game, padding, padding, "MUTE SOUNDS",{
+			font: "15px Courier",
+			fill: "#0000FF",
+			align: "left"
+	});		
 	
-	var label = new Phaser.Text(game, padding, padding, "MUTE SOUNDS", style);	
-	
-	button.add(label)
+	button.addChild(label)
 	
 	button.animation = game.add.tween(button).to( { y:'+10' }, 100, Phaser.Easing.Quadratic.Out).to( { y:'-10' }, 100, Phaser.Easing.Quadratic.Out);
 	
@@ -244,68 +323,154 @@ function MuteButton(game,x,y,style){
 	
 	button.events.onInputDown.add(function(b){
 		
-		if(this.on == false){
+		if(game.sound.mute == false){
 			
 			b.animation.start();
-			
-			this.muteSounds();
-			rectangle.clear();
-			rectangle.lineStyle(3, 0xFF0000,3);
-			rectangle.beginFill(0xFFFFFF);
-			rectangle.drawRect(0, 0, w+padding, h+padding );
-			rectangle.endFill();
-			label.setText("UNMUTE SOUNDS");	
-			this.on = true;
+			b.on();
+			game.sound.mute = true;
+
 			
 		}else{
 			
 			b.animation.start();
-			
-			this.unMuteSounds();
+			b.off();
+			game.sound.mute = false;
+		}
+		
+		
+
+	},this);
+	
+	button.on = function(){
+		
 			rectangle.clear();
-			rectangle.lineStyle(3, 0x0000FF,3);
+			rectangle.lineStyle(2, 0xFF0000,2);
+			rectangle.beginFill(0xFFFFFF);
+			rectangle.drawRect(0, 0, w+padding, h+padding );
+			rectangle.endFill();
+			label.setText("UNMUTE SOUNDS");	
+		
+	}
+	
+	button.off = function(){
+
+			rectangle.clear();
+			rectangle.lineStyle(2, 0x0000FF,2);
 			rectangle.beginFill(0xFFFFFF);
 			rectangle.drawRect(0, 0, w+padding, h+padding );
 			rectangle.endFill();
 			label.setText("MUTE SOUNDS");	
-		}
-
-	},this);
-	
-		
-	this.muteSounds = function(){
-
-		if(Memory.sounds != undefined){
-			
-			for (var  key in Memory.sounds){
-				
-				Memory.sounds[key].mute = true;
-				
-				
-			}
-		}
 		
 	}
 	
-	this.unMuteSounds = function(){
-
-		if(Memory.sounds != undefined){
+	button.init = function(){
+	
+		if(game.sound.mute){
 			
-			for (var  key in Memory.sounds){
-				
-				Memory.sounds[key].mute = false;
-				
-				
-			}
+			button.on();
+			
+		}else{
+			
+			button.off();
 		}
+	
+	}
+	
+	
+	button.init();			
+
+	return button;
+	
+}
+
+function ChangeStateButton(game,x,y,callback,state,text){
+	
+	var button = game.add.sprite(x, y, null);;
+	
+	button.x = x
+	button.y = y
+	
+	var w = 50;
+	var h = 20;
+	
+	var padding = 5;
+	
+	var rectangle = game.add.graphics(0, 0);
+	rectangle.lineStyle(2, 0x0000FF,2);
+	rectangle.beginFill(0xFFFFFF);
+	rectangle.drawRect(0, 0, w+padding, h+padding );
+	rectangle.endFill();
+	
+	button.addChild(rectangle);
+
+	var label = new Phaser.Text(game, padding, padding, text,{
+			font: "15px Courier",
+			fill: "#0000FF",
+			align: "center"
+	});		
+	
+	button.addChild(label)
+	
+	button.animation = game.add.tween(button).to( { y:'+10' }, 100, Phaser.Easing.Quadratic.Out).to( { y:'-10' }, 100, Phaser.Easing.Quadratic.Out);
+	
+	button.animation.onComplete.add(function(){this.changeState();},this)
+	
+	button.inputEnabled = true;
+	
+	button.events.onInputDown.add(function(b){
+		
+			b.animation.start();
+
+	},this);
+	
+	this.changeState = function(context){
+		
+		callback();
+		game.state.start(state);
 		
 	}
 	
 	return button;
-
-	
 	
 }
+
+function slideFadeIn(game,sprite,from,delay){
+	
+	switch(from){
+		case 'left':
+			sprite.x = sprite.x-20
+			sprite.alpha = 0;		
+			game.add.tween(sprite).to( { alpha: 1 }, 200, Phaser.Easing.Quadratic.InOut, true);
+			game.add.tween(sprite).to( { x: '+20' }, 200, Phaser.Easing.Quadratic.InOut, true);				
+		break;
+		case 'right':
+			sprite.x = sprite.x+20
+			sprite.alpha = 0;		
+			game.add.tween(sprite).to( { alpha: 1 }, 200, Phaser.Easing.Quadratic.InOut, true);
+			game.add.tween(sprite).to( { x: '-20' }, 200, Phaser.Easing.Quadratic.InOut, true);				
+		
+		break;
+		case 'top':
+			sprite.y = sprite.y-20
+			sprite.alpha = 0;		
+			game.add.tween(sprite).to( { alpha: 1 }, 200, Phaser.Easing.Quadratic.InOut, true);
+			game.add.tween(sprite).to( { y: '+20' }, 200, Phaser.Easing.Quadratic.InOut, true);				
+		break;
+		case 'bottom':
+			sprite.y = sprite.y+20
+			sprite.alpha = 0;		
+			game.add.tween(sprite).to( { alpha: 1 }, 200, Phaser.Easing.Quadratic.InOut, true);
+			game.add.tween(sprite).to( { y: '-20' }, 200, Phaser.Easing.Quadratic.InOut, true);				
+		
+		break;
+	}
+	
+
+	
+}
+	
+
+	
 	
 
 function sendToDataBase(data,complete=function(r){console.log(r.responseText);}){

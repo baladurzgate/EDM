@@ -1,5 +1,5 @@
 
-Memory.Preloader = function (game) {
+EPM.Preloader = function (game) {
 
 	this.background = null;
 	this.preloadBar = null;
@@ -10,7 +10,7 @@ Memory.Preloader = function (game) {
 
 };
 
-Memory.Preloader.prototype = {
+EPM.Preloader.prototype = {
 	
 
 
@@ -23,13 +23,17 @@ Memory.Preloader.prototype = {
 		this.load.setPreloadSprite(this.preloadBar);
 
 		this.load.atlas('playButton', 'assets/images/playbutton.png', 'assets/images/playbutton.json');
-		this.load.atlas('cards_atlas', 'assets/images/atlas_cards.png', 'assets/images/atlas_cards.json');
-		this.load.json('cards_info','assets/data/cards_info.json')
+		this.load.atlas('cards_atlas', 'assets/images/cards_atlas_2.png', 'assets/images/cards_atlas_2.json');
+		this.load.json('cards_info','assets/data/cards_info_2.json')
 		
 		this.load.audio('sweep', 'assets/sounds/sweep.mp3');
 		this.load.audio('get_points', 'assets/sounds/get_points.mp3');
 		this.load.audio('turn', 'assets/sounds/turn.ogg');
 		this.load.audio('error', 'assets/sounds/error.wav');
+		this.load.audio('tic', 'assets/sounds/tic.ogg');
+		this.load.audio('end', 'assets/sounds/end.ogg');
+		this.load.audio('music', 'assets/sounds/elevator_music.ogg');
+		this.load.audio('music2', 'assets/sounds/loundge_music.ogg');
 
 
 	},
@@ -37,9 +41,11 @@ Memory.Preloader.prototype = {
 	create: function () {
 		
 		this.preloadBar.cropEnabled = false;
-		this.state.start('ScoreMenu');
+		this.state.start('MainMenu');
 
 	},
 
 
 };
+
+

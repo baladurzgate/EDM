@@ -2,28 +2,37 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>EUROPEAN DEPUTY MADNESS 2 !</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="have fun memorizing european parliament members!">
+	<link rel="stylesheet" href="style.css">
+	<title>EUROPEAN PARLIAMENT MADNESS</title>
 	<script src="src/lib/jquery.js"></script>
 	<script src="src/lib/phaser.js"></script>
 	<script src="src/Boot.js"></script>
 	<script src="src/Preloader.js"></script>
 	<script src="src/MainMenu.js"></script>
-	<script src="src/ScoreMenu.js"></script>
+	<script src="src/Tutorial.js"></script>
 	<script src="src/Game.js"></script>
+	<script src="src/ScoreMenu.js"></script>
 </head>
 <body>
+<div class = "title"> EUROPEAN PARLIAMENT MADNESS </div>
 <div id="gameContainer"></div>
 <script type="text/javascript">
 
 window.onload = function() {
 
-	var game = new Phaser.Game(900, 768, Phaser.AUTO, 'gameContainer');
+	var gameScale = 0.8
 
-	game.state.add('Boot', Memory.Boot);
-	game.state.add('Preloader', Memory.Preloader);
-	game.state.add('MainMenu', Memory.MainMenu);
-	game.state.add('Game', Memory.Game);
-	game.state.add('ScoreMenu', Memory.ScoreMenu);
+	var game = new Phaser.Game(900*gameScale, 768*gameScale, Phaser.AUTO, 'gameContainer');
+
+	game.state.add('Boot', EPM.Boot);
+	game.state.add('Preloader', EPM.Preloader);
+	game.state.add('MainMenu', EPM.MainMenu);
+	game.state.add('Tutorial', EPM.Tutorial);
+	game.state.add('Game', EPM.Game);
+	game.state.add('ScoreMenu', EPM.ScoreMenu);
 
 	game.state.start('Boot');
 

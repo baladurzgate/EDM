@@ -1,0 +1,240 @@
+{"frames": [
+
+{
+	"name": "ArnaudDANJEAN",
+
+},
+{
+	"name": "AymericCHAUPRADE",
+
+},
+{
+	"name": "DominiqueRIQUET",
+
+},
+{
+	"name": "ElisabethMORIN-CHANTIER",
+
+},
+{
+	"name": "GuillaumeBALAS",
+
+},
+{
+	"name": "Jean-LucMELENCHON",
+
+},
+{
+	"name": "Jean-LucSCHAFFHAUSER",
+
+},
+{
+	"name": "Jean-MarieCAVADA",
+
+},
+{
+	"name": "Jean-MarieLEPEN",
+
+},
+{
+	"name": "JeanARTHUIS",
+
+},
+{
+	"name": "JoséBOVÉ",
+
+},
+{
+	"name": "MicheleALLIOTMARIE",
+
+},
+{
+	"name": "NadineMORANO",
+
+},
+{
+	"name": "NicolasBAY",
+
+},
+{
+	"name": "SteeveBRIOIS",
+
+},
+{
+	"name": "alainCADEC",
+
+},
+{
+	"name": "aliainLAMASSOURE",
+
+},
+{
+	"name": "angeliqueDELAHAYE",
+
+},
+{
+	"name": "anneSANDER",
+
+},
+{
+	"name": "bernardMONOT",
+
+},
+{
+	"name": "brunoGOLLNISCH",
+
+},
+{
+	"name": "dominiqueBILDE",
+
+},
+{
+	"name": "edouardFERRAND",
+
+},
+{
+	"name": "edouardMARTIN",
+
+},
+{
+	"name": "emmanuelMAUREL",
+
+},
+{
+	"name": "ericANDRIEU",
+
+},
+{
+	"name": "evaJOLY",
+
+},
+{
+	"name": "frankPROUST",
+
+},
+{
+	"name": "gillesLEBRETON",
+
+},
+{
+	"name": "hidden",
+
+},
+{
+	"name": "isabelleTHOMAS",
+
+},
+{
+	"name": "jean-francoisJALKH",
+
+},
+{
+	"name": "jeanpaulDENANOT",
+
+},
+{
+	"name": "jeromeLAVRILLEUX",
+
+},
+{
+	"name": "joelleBERGERON",
+
+},
+{
+	"name": "joelleMELIN",
+
+},
+{
+	"name": "louis-josephMANSCOUR",
+
+},
+{
+	"name": "louisALIOT",
+
+},
+{
+	"name": "marcJOULAUD",
+
+},
+{
+	"name": "marie-christineARNAUTU",
+
+},
+{
+	"name": "marineLEPEN",
+
+},
+{
+	"name": "mauricePONGA",
+
+},
+{
+	"name": "michelDANTIN",
+
+},
+{
+	"name": "micheleRIVASI",
+
+},
+{
+	"name": "mireilleDORNANO",
+
+},
+{
+	"name": "nathalieGRIESBECK",
+
+},
+{
+	"name": "philippeJUVIN",
+
+},
+{
+	"name": "philippeLOISEAU",
+
+},
+{
+	"name": "rachidaDATI",
+
+},
+{
+	"name": "robertROCHEFORT",
+
+},
+{
+	"name": "selected.png",
+
+},
+{
+	"name": "spohieMONTEL",
+
+},
+{
+	"name": "sylvieGODDYN",
+
+},
+{
+	"name": "sylvieGOULARD",
+
+},
+{
+	"name": "tokiaSAIFI",
+
+},
+{
+	"name": "vincentPEILLON",
+
+},
+{
+	"name": "virginieROZIERE",
+
+},
+{
+	"name": "yannickJADOT",
+
+},
+{
+	"name": "younousOMARJEE",
+
+}],
+
+}

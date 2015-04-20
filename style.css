@@ -1,0 +1,95 @@
+			body{
+			
+
+			
+			}
+			.wrapper{
+				width:720px;
+				margin:10 auto;
+
+				
+			}
+			.title{
+				
+				width:100%;
+				font-family:'Courier';
+				text-align:center;
+				font-size:40px;
+				padding:10px;
+				background-color:#FFFFFF;
+				border-style:solid;
+				border-color:#0000FF;
+				margin:0px;
+				
+
+				
+			}
+			.menu{
+			
+				width:100%;
+				text-align:left;
+				margin:20px;
+			
+			}
+			
+			.bt{
+				
+				font-family:'Courier';
+				text-align:center;
+				font-size:20px;
+				padding:5px;
+				width:100px;
+				background-color:#FFFFFF;
+				border-style:solid;
+				border-color:#0000FF;
+				color:#0000FF;
+				margin:0px;
+				cursor:pointer;
+				 text-decoration: none;
+	
+				
+			}
+			
+			.score_line{
+				
+				font-family:'Courier';
+				font-size:30px;
+				padding:10px;
+				
+			}		
+			
+			.highscores{
+				
+				font-family:'Courier';
+				font-size:35px;
+				padding:10px;
+
+				
+			}
+			
+			.name{
+				
+				font-family:'Courier';
+				font-size:30px;
+				padding:10px;
+				
+			}
+			
+			
+			.score{
+				
+				font-family:'Courier';
+				font-size:30px;
+				color:#FF5500;
+				padding:10px;
+				
+			}
+			
+			.time{
+				
+				font-family:'Courier';
+				font-size:14px;
+				padding:10px;
+				
+			}
+		
